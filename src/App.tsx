@@ -1,9 +1,9 @@
 import "./App.css";
 import { useState } from "react";
-import SubmitButton from "./Components/SubmitButton";
 import ResponsiveAppBar from "./Components/AppBar";
-import Nutrition from "./Components/Nutrition";
-import Button from "@mui/material/Button";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import TodayMeal from "./Pages/TodayMeal";
+import PastMeal from "./Pages/PastMeal";
 
 function App() {
   const [nutritionData, setNutritionData] = useState(null);
@@ -25,10 +25,17 @@ function App() {
     }
   }
 
+  
   return (
-    <div className="App">
-      <ResponsiveAppBar/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <ResponsiveAppBar/>
+      </div>
+      <Routes>
+        <Route path="/today-meal" element={<TodayMeal />} />
+        <Route path="/past-meal" element={<PastMeal />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
