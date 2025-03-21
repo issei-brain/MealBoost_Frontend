@@ -1,4 +1,3 @@
-// src/Pages/PastMeal.tsx
 function PastMeal() {
     return (
       <div>

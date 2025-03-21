@@ -17,6 +17,7 @@ import { useNavigate } from 'react-router-dom';
 const pages = [
   { label: '今日の食事', path: '/today-meal' },
   { label: '過去の食事', path: '/past-meal' },
+  { label: '体組成', path: '/body-status'}
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -50,7 +51,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/today-meal"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -106,7 +107,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="today-meal"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
