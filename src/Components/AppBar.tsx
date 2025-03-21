@@ -17,6 +17,7 @@ import { useNavigate } from 'react-router-dom';
 const pages = [
   { label: '今日の食事', path: '/today-meal' },
   { label: '過去の食事', path: '/past-meal' },
+  { label: '体組成', path: '/body-status'}
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

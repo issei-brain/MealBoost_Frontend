@@ -4,6 +4,7 @@ import ResponsiveAppBar from "./Components/AppBar";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TodayMeal from "./Pages/TodayMeal";
 import PastMeal from "./Pages/PastMeal";
+import BodyStatus from "./Pages/BodyStatus";
 
 function App() {
   const [nutritionData, setNutritionData] = useState(null);
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/today-meal" element={<TodayMeal />} />
         <Route path="/past-meal" element={<PastMeal />} />
+        <Route path="/body-status" element={<BodyStatus />} />
       </Routes>
     </BrowserRouter>
   );

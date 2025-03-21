@@ -1,4 +1,3 @@
-// src/Pages/TodayMeal.tsx
 function TodayMeal() {
     return (
       <div>
